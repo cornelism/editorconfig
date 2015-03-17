@@ -2,19 +2,18 @@
 root = true
 
 [*]
-indent_style = tab
 end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
 # Matches multiple files with brace expansion notation
-[*.{js,py,html,css,sass,scss,less}]
+[*.{js,py,html,css,sass,scss,less,info}]
 indent_style = tab
 indent_size = 2
 
-# As we work in Drupal and want to avoid any problems, we define a config for php files
-[*.{php}]
+# To work according to the coding standards of Drupal
+[*.{php,module,install,inc}]
 indent_style = space
 indent_size = 2
 
